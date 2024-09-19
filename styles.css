@@ -229,6 +229,33 @@ input:checked + .slider:before {
 
 
 
+.section-two .container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.logobox{
+    /* border: .2rem solid black; */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    padding: 2rem;
+    width: 196px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -266,7 +293,16 @@ input:checked + .slider:before {
         justify-content: flex-start;
         padding-top: 5rem;
     }
+    .section-two .container{
+        /* gap: 2rem; */
+    }
+    .logobox{
+        display: flex;        
 
+    }
+    #logo-4, #logo-5, #logo-6{
+        display: none;
+    }
 
 }
 @media(min-width: 1024px){
@@ -308,5 +344,8 @@ input:checked + .slider:before {
         }
         .discover-more{
             padding-top: 5rem;
-                }
+        }
+        #logo-4, #logo-5, #logo-6{
+            display: block;
+        }
 }
