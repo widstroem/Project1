@@ -12,6 +12,7 @@
     --color-divider:#E2E5F1;
     --color-secondary:#EFF2FC;
     --color-light-bg:#F3F6FF;  
+    --color-features-text:#585C7B;
 
     --font-semibold: 600;
     --padding-main: 1rem;
@@ -251,6 +252,56 @@ input:checked + .slider:before {
 
 
 
+.phone{
+    display: none;
+}
+.app-features{
+    text-align: center;
+    /* grid-area: head; */
+h2{
+    font-weight: 800;
+    font-size: 27.9px;
+    padding-bottom: 1rem;
+}
+p{
+    font-size: 18px;
+    color: var(--color-features-text);
+}
+}
+.attribute{
+    display: flex;
+    width: 345px;
+    height: auto;
+    gap: 1rem;
+
+    h3{
+        font-weight: 800;
+        font-size: 20px;
+        padding-bottom: 0.5rem;
+    }
+    p{
+        font-size: 16px;
+        color: var(--color-features-text);
+    }
+}
+.contain{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -293,8 +344,7 @@ input:checked + .slider:before {
         justify-content: flex-start;
         padding-top: 5rem;
     }
-    .section-two .container{
-        /* gap: 2rem; */
+
     }
     .logobox{
         display: flex;        
@@ -302,6 +352,16 @@ input:checked + .slider:before {
     }
     #logo-4, #logo-5, #logo-6{
         display: none;
+    }
+    .app-features{
+        grid-area: head;
+    }
+    .section-three .container{
+        padding-top: 5rem;
+    }
+    .contain{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "head head";
     }
 
 }
@@ -322,7 +382,7 @@ input:checked + .slider:before {
     .section-one .container{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "headline images""content images";
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
     .headline{
         text-align: left;
@@ -348,4 +408,22 @@ input:checked + .slider:before {
         #logo-4, #logo-5, #logo-6{
             display: block;
         }
-}
+        .section-three .container{
+            display: flex;
+            gap: 10rem;
+            padding-top: 10rem;
+
+            .app-features{
+                text-align: left;
+
+                h2{
+                    font-size: 40px;
+                }
+            }
+
+            .phone{
+                display: flex;
+            }
+
+        }
+    }
