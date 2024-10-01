@@ -13,6 +13,7 @@
     --color-secondary:#EFF2FC;
     --color-light-bg:#F3F6FF;  
     --color-features-text:#585C7B;
+    --color-system-success:#22C55E;
 
     --font-semibold: 600;
     --padding-main: 1rem;
@@ -373,6 +374,7 @@ p{
 .phone-text{
     p, h3{
         width: 360px;
+        padding-bottom: 3rem;
     }
 }
 
@@ -465,6 +467,7 @@ p{
     justify-content: space-evenly;
     gap: 3rem;
     background-color: var(--color-light-bg);
+    display: none;
 }
 .clients{
     width: 306px;
@@ -481,6 +484,88 @@ p{
         color: var(--color-body-text);
     }
 }
+
+
+/* Section 7 */ 
+
+.questions{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        width: 350px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 24.7px;
+        
+    }
+    p{
+        width: 350px;
+        text-align: center;
+        color: var(--color-body-text);
+        font-size: 18px;
+        padding-top: 1.5rem;
+    }
+}
+
+
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+.faq-boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    padding-left: 1rem;
+    
+}
+.contact-us-now{
+    display: flex;
+    width: 160px;
+    align-items: center;
+    padding: 1rem;
+}
+.faq-button{
+    display: flex;
+    justify-content: center;
+}
+.contact-boxes{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact{
+    display: none;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    width: 340px;
+    height: 160px;
+    padding: 1rem;
+
+
+    a{
+        text-decoration: none;
+        display: flex;
+        gap: 1rem;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+#contact-us-text-1{
+    color: var(--color-primary);
+}
+#contact-us-text-2{
+    color: var(--color-system-success);
+}
+
 
 
 
@@ -561,6 +646,36 @@ p{
         display: flex;
     }
 
+    /* section 7 */
+
+    .contact{
+        display: block;
+        
+    }
+    #q-text{
+        padding-block: 1rem;
+    }
+    .faq-button{
+        display: none;
+    }
+    .questions{
+        grid-area: question;
+    }
+    .contact-boxes{
+        grid-area: contact;
+    }
+    .faq{
+        grid-area: faq;
+    }
+    .section-seven .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "question""faq""contact";
+        gap: 3rem;
+        
+    }
+
+
 }
 @media(min-width: 1024px){
     .btn-burger{
@@ -638,4 +753,49 @@ p{
         .section-five{
             display: block;
         }
+
+        /* section 6 */
+
+        .section-six .container{
+            display: flex;
+        }
+
+        /* section 7 */
+        .section-seven .container{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-areas: "question faq""contact faq";
+            gap: 1rem;
+            
+        }
+        .questions{
+            align-items: start;
+            h2{
+                text-align: left;
+            }
+            p{
+                text-align: left;
+            }
+        }
+        .contact{
+            width: 196px;
+            height: 166px;
+            img{
+                padding-block: .5rem;
+            }
+            a{
+                padding-top: 1rem;
+                align-items: center;
+            }
+        }
+        .contact-boxes{
+            justify-content:flex-start;
+            gap: 2rem;
+        }
+        .faq-boxes{
+            width: 746px;
+        }
+
+
     }
+    
