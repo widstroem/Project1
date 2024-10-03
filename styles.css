@@ -28,6 +28,7 @@
     width: 100%;
     padding-inline: 1rem;
     padding-top: .5rem;
+    padding-bottom: 5rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -289,6 +290,7 @@ p{
     display: grid;
     justify-items: center;
     gap: 2rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -516,6 +518,7 @@ p{
     flex-direction: column;
     gap: 1rem;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .faq-boxes{
     display: flex;
@@ -564,6 +567,57 @@ p{
 }
 #contact-us-text-2{
     color: var(--color-system-success);
+}
+
+/* section 8 */
+
+
+.newsletter-container{
+    background-color: var(--color-light-bg);
+    border-radius: .5em;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding-top: 4rem;
+
+}
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+.news-1{
+    font-weight: 800;
+    font-size: 21.6px;
+    width: 231px;
+}
+.btn-form{
+    background-color: var(--color-primary);
+    color: white;
+    padding: .5em 2em;
+    border: 0;
+    border-radius: 0 .5em .5em 0;
+}
+.form-input{
+    padding:.5em 2em;
+    border: 1px solid var(--color-forms-border);
+    border-radius: .5em 0 0 .5em;
+    background-image: url(Images/bx-envelope.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+
+}
+::placeholder{
+    color: var(--color-input-placeholder);
+}
+.newsletter-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news-2{
+    display: none;
 }
 
 
@@ -673,6 +727,16 @@ p{
         grid-template-areas: "question""faq""contact";
         gap: 3rem;
         
+    }
+    /* section 8 */
+
+    .newsletter-container{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .newsletter{
+        gap: 2rem;
+        padding-top: 0;
     }
 
 
@@ -794,6 +858,20 @@ p{
         }
         .faq-boxes{
             width: 746px;
+        }
+
+        /* section 8 */
+        .news-1{
+            display: none;
+        }
+        .news-2{
+            display: block;
+            width: 416px;
+            font-size: 24px;
+            font-weight: 800;
+        }
+        .newsletter-container{
+            gap: 5rem
         }
 
 
