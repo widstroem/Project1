@@ -621,6 +621,24 @@ p{
 }
 
 
+/* footer */
+
+.credits{
+    display: flex;
+    justify-content: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    p{
+        text-align: center;
+        width: 390px;
+        font-size: 14px;
+        color: var(--color-muted-text);
+    }
+}
+
 
 
 
